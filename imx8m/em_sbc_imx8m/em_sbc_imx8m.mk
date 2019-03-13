@@ -162,19 +162,20 @@ PRODUCT_PACKAGES += \
     wifilogd \
     wificond
 
-# Qcom WiFi Firmware
+# Broadcom Bluetooth
+PRODUCT_PACKAGES += \
+    bt_vendor.conf \
+    libbt-vendor-broadcom
+
+# BCM WiFi Firmware  CYW43455
 PRODUCT_COPY_FILES += \
-    vendor/nxp/qca-wifi-bt/1CQ_QCA6174A_LEA_2.0/lib/firmware/qca6174/bdwlan30.bin:vendor/firmware/bdwlan30.bin \
-    vendor/nxp/qca-wifi-bt/1CQ_QCA6174A_LEA_2.0/lib/firmware/qca6174/otp30.bin:vendor/firmware/otp30.bin \
-    vendor/nxp/qca-wifi-bt/1CQ_QCA6174A_LEA_2.0/lib/firmware/qca6174/qwlan30.bin:vendor/firmware/qwlan30.bin \
-    vendor/nxp/qca-wifi-bt/1CQ_QCA6174A_LEA_2.0/lib/firmware/qca6174/utf30.bin:vendor/firmware/utf30.bin \
-    vendor/nxp/qca-wifi-bt/1CQ_QCA6174A_LEA_2.0/lib/firmware/wlan/qca6174/qcom_cfg.ini:vendor/firmware/wlan/qcom_cfg.ini
+    $(IMX_FIRMWARE_PATH)/imx-firmware/brcm/CYW43455/brcmfmac43455-sdio.bin:vendor/firmware/brcm/brcmfmac43455-sdio.bin \
+    $(IMX_FIRMWARE_PATH)/imx-firmware/brcm/CYW43455/brcmfmac43455-sdio.clm_blob:vendor/firmware/brcm/brcmfmac43455-sdio.clm_blob \
+    $(IMX_FIRMWARE_PATH)/imx-firmware/brcm/CYW43455/brcmfmac43455-sdio.txt:vendor/firmware/brcm/brcmfmac43455-sdio.txt
 
 # Qcom Bluetooth Firmware
 PRODUCT_COPY_FILES += \
-    vendor/nxp/qca-wifi-bt/1CQ_QCA6174A_LEA_2.0/lib/firmware/nvm_tlv_3.2.bin:vendor/firmware/nvm_tlv_3.2.bin \
-    vendor/nxp/qca-wifi-bt/1CQ_QCA6174A_LEA_2.0/lib/firmware/rampatch_tlv_3.2.tlv:vendor/firmware/rampatch_tlv_3.2.tlv \
-    vendor/nxp/qca-wifi-bt/qca_proprietary/Android_HAL/wcnss_filter_8mq:vendor/bin/wcnss_filter
+   vendor/nxp/qca-wifi-bt/qca_proprietary/Android_HAL/wcnss_filter_8mq:vendor/bin/wcnss_filter
 
 # Keymaster HAL
 PRODUCT_PACKAGES += \

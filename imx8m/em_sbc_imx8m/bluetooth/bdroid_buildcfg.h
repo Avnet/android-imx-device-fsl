@@ -19,15 +19,20 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME "iMX8"
+#define BTM_DEF_LOCAL_NAME "iMX8M"
 
-// Disables Interleave scan
-#define BTA_HOST_INTERLEAVE_SEARCH  FALSE
-// skips conn update at conn completion
-#define BTA_BLE_SKIP_CONN_UPD  TRUE
-// Disables read remote device feature
-#define BTA_SKIP_BLE_READ_REMOTE_FEAT TRUE
+#define BTA_DM_COD {0x1A, 0x01, 0x14}
 
-//Enable A2DPSink AVRCPController
+#define BTIF_HF_SERVICES (BTA_HSP_SERVICE_MASK)
+#define BTIF_HF_SERVICE_NAMES  { BTIF_HSAG_SERVICE_NAME, NULL }
+#define BTM_WBS_INCLUDED TRUE
+#define BTIF_HF_WBS_PREFERRED TRUE
+
+/*Enable A2dp Sink */
 #define BTA_AV_SINK_INCLUDED TRUE
+#define USE_AUDIO_TRACK TRUE
+
+#define BLE_PRIVACY_SPT TRUE
+#define BLE_VND_INCLUDED TRUE
+
 #endif
