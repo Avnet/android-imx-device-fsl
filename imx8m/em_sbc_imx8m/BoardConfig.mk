@@ -122,7 +122,7 @@ endif
 endif
 
 BOARD_PREBUILT_DTBOIMAGE := out/target/product/em_sbc_imx8m/dtbo-imx8mq.img
-TARGET_BOARD_DTS_CONFIG ?= imx8mq:em-sbc-imx8m-android.dtb
+TARGET_BOARD_DTS_CONFIG ?= imx8mq:em-sbc-imx8m-android.dtb imx8mq-emmc:em-sbc-imx8m-android-emmc.dtb
 TARGET_BOOTLOADER_CONFIG := imx8mq:imx8mq_evk_android_defconfig
 
 TARGET_KERNEL_DEFCONFIG := em_sbc_imx8m_android_defconfig
