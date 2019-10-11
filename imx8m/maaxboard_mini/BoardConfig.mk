@@ -135,7 +135,7 @@ BOARD_KERNEL_CMDLINE := init=/init androidboot.console=ttymxc0 androidboot.hardw
 BOARD_KERNEL_CMDLINE += androidboot.wificountrycode=CN
 
 # Defaultly evk_8mm use QCA 1PJ wifi module, if use BCM 1MW module, set androidboot.wifivendor=bcm
-BOARD_KERNEL_CMDLINE += androidboot.wifivendor=qca
+BOARD_KERNEL_CMDLINE += androidboot.wifivendor=bcm
 
 ifeq ($(TARGET_USERIMAGES_USE_UBIFS),true)
 ifeq ($(TARGET_USERIMAGES_USE_EXT4),true)

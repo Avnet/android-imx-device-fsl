@@ -96,7 +96,7 @@ on early-boot
 
     setprop persist.service.bdroid.bdaddr 22:22:67:C6:69:73
 
-    setprop qcom.bluetooth.soc rome_uart
+    #setprop qcom.bluetooth.soc rome_uart
     setprop vendor.wc_transport.start_hci false
 
     # Set the density to 213 tvdpi to match CDD.
