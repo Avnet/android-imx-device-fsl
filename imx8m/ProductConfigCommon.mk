@@ -15,7 +15,7 @@ PRODUCT_PACKAGES += \
     ExtractorPkg \
     FSLOta \
     charger_res_images \
-    ethernet \
+    ethernet3 \
     libGLES_android \
     libRS \
     libedid \
