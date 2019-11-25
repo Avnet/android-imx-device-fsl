@@ -195,4 +195,7 @@
     <!-- Boolean indicating whether system support sustained performance mode. -->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
 
+    <!-- Remote server that can provide NTP responses. time.android.com-->
+    <string translatable="false" name="config_ntpServer">ntp1.aliyun.com</string>
+
 </resources>
